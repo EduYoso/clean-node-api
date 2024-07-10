@@ -1,6 +1,10 @@
-import type { Config } from "jest";
+/**
+ * For a detailed explanation regarding each configuration property, visit:
+ * https://jestjs.io/docs/configuration
+ */
 
-const config: Config = {
+/** @type {import('jest').Config} */
+module.exports = {
   collectCoverage: true,
   collectCoverageFrom: ["<rootDir>/src/**/*.ts"],
   coverageDirectory: "coverage",
@@ -10,5 +14,3 @@ const config: Config = {
     ".+\\.ts$": "ts-jest",
   },
 };
-
-export default config;
